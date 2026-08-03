@@ -1,0 +1,58 @@
+- Infrastructure:
+
+    - CasaOS:
+        icon: casaos.png
+        href: http://192.168.1.9
+        description: Home Server
+        ping: 192.168.1.9
+
+    - Homepage:
+        icon: homepage.png
+        href: http://192.168.1.9:3000
+        description: Infrastructure Dashboard
+        server: my-docker
+        container: homepage
+
+    - Portainer:
+        href: "#"
+        description: Coming Soon
+
+- Data Platform:
+
+    - Airflow:
+        href: "#"
+
+    - MinIO:
+        href: "#"
+
+    - Spark:
+        href: "#"
+
+    - Trino:
+        href: "#"
+
+    - OpenMetadata:
+        href: "#"
+
+- Media:
+
+    - Jellyfin:
+        href: "#"
+
+    - Immich:
+        href: "#"
+
+    - Nextcloud:
+        href: "#"
+
+- Monitoring:
+
+    - Grafana:
+        href: "#"
+
+    - Prometheus:
+        href: "#"
+
+    - Loki:
+        href: "#"
+

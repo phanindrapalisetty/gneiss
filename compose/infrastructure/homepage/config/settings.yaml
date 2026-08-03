@@ -1,0 +1,34 @@
+title: Gneiss
+
+language: en
+
+theme: dark
+
+color: zinc
+
+headerStyle: clean
+
+providers:
+  openweathermap: ""
+  weatherapi: ""
+
+layout:
+  Infrastructure:
+    style: row
+    columns: 3
+
+  Development:
+    style: row
+    columns: 3
+
+  Media:
+    style: row
+    columns: 4
+
+  Data Platform:
+    style: row
+    columns: 5
+
+  Monitoring:
+    style: row
+    columns: 3
