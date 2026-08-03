@@ -12,10 +12,15 @@
         description: Infrastructure Dashboard
         server: my-docker
         container: homepage
+        siteMonitor: http://192.168.1.9:3000
 
     - Portainer:
-        href: "#"
-        description: Coming Soon
+        icon: portainer.png
+        href: https://192.168.1.9:9443
+        description: Docker Management
+        server: my-docker
+        container: portainer
+        siteMonitor: https://192.168.1.9:9443
 
 - Data Platform:
 
