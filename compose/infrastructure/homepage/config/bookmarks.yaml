@@ -2,6 +2,7 @@
 
     - Homepage Documentation:
         - href: https://gethomepage.dev
+        - icon: airflow.png
 
     - Docker Hub:
         - href: https://hub.docker.com

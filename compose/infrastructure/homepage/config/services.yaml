@@ -21,43 +21,76 @@
         server: my-docker
         container: portainer
         siteMonitor: https://192.168.1.9:9443
+    
+    - Caddy:
+        icon: caddy.png
+        href: https://192.168.1.9:8000
+        description: Automatic HTTPS reverse proxy
+        server: my-docker
+        container: caddy
 
 - Data Platform:
 
     - Airflow:
-        href: "#"
+        icon: si-apacheairflow
+        href: https://192.168.1.9:8000
+        description: Workflow Orchestration
 
     - MinIO:
         href: "#"
+        icon: minio.png
+        description: Placeholder for MinIO
 
     - Spark:
         href: "#"
+        icon: si-apachespark.png
+        description: Placeholder for Spark
 
     - Trino:
         href: "#"
+        icon: si-trino.png
+        description: Placeholder for Trino
 
     - OpenMetadata:
         href: "#"
+        icon: si-openmetadata.png
+        description: Open Source Context Layer
 
 - Media:
 
     - Jellyfin:
         href: "#"
+        icon: jellyfin.png
+        description: Media Streaming Server
 
     - Immich:
         href: "#"
+        icon: immich.png
+        description: Photo and Video Backup
 
     - Nextcloud:
         href: "#"
+        icon: nextcloud.png
+        description: Private Cloud Storage
+    
+    - Kavita:
+        href: "#"
+        icon: kavita.png
+        description: E-book and comic library
 
 - Monitoring:
 
     - Grafana:
         href: "#"
+        icon: grafana.png
+        description: Dashboards and Observability
 
     - Prometheus:
         href: "#"
+        icon: prometheus.png
+        description: Metrics Collection and Monitoring
 
     - Loki:
         href: "#"
-
+        icon: loki.png
+        description: Centralized Log Aggregation
