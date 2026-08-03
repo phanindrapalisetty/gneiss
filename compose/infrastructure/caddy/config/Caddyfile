@@ -1,0 +1,19 @@
+{
+    debug
+}
+
+http://home.gneiss {
+    reverse_proxy host.docker.internal:3000
+}
+
+http://casa.gneiss {
+    reverse_proxy host.docker.internal:8099
+}
+
+http://portainer.gneiss {
+    reverse_proxy https://host.docker.internal:9443 {
+        transport http {
+            tls_insecure_skip_verify
+        }
+    }
+}

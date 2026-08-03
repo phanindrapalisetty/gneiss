@@ -1,0 +1,24 @@
+services:
+  caddy:
+    image: caddy:2.10
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    env_file:
+      - .env
+    volumes:
+      - ./config/Caddyfile:/etc/caddy/Caddyfile:ro
+      - /mnt/storage/Gneiss/infrastructure/caddy/data:/data
+      - /mnt/storage/Gneiss/infrastructure/caddy/config:/config
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - gneiss-infra
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  gneiss-infra:
+    name: gneiss-infra
