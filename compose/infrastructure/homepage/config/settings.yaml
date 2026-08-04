@@ -4,7 +4,10 @@ language: en
 
 theme: dark
 
-color: zinc
+color: slate
+background:
+  color: "#1E2635"
+cardBlur: md
 
 headerStyle: clean
 
@@ -13,6 +16,10 @@ providers:
   weatherapi: ""
 
 layout:
+  Quick Links:
+    style: row
+    columns: 6
+
   Infrastructure:
     style: row
     columns: 2

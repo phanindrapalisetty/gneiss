@@ -1,11 +1,47 @@
-- References:
-
-    - Homepage Documentation:
-        - href: https://gethomepage.dev
-        - icon: airflow.png
-
-    - Docker Hub:
-        - href: https://hub.docker.com
-
+- Developer:
     - GitHub:
-        - href: https://github.com
+        - icon: si-github
+          href: https://github.com
+    - GitLab:
+        - icon: si-gitlab
+          href: https://gitlab.com
+    - Docker Hub:
+        - icon: si-docker
+          href: https://hub.docker.com
+    - Stack Overflow:
+        - icon: si-stackoverflow
+          href: https://stackoverflow.com
+    - VS Code:
+        - icon: si-visualstudiocode
+          href: https://vscode.dev
+
+- Social:
+    - Reddit:
+        - icon: si-reddit
+          href: https://reddit.com
+    - Discord:
+        - icon: si-discord
+          href: https://discord.com
+    - X:
+        - icon: si-x
+          href: https://x.com
+    - LinkedIn:
+        - icon: si-linkedin
+          href: https://linkedin.com
+    - WhatsApp:
+        - icon: si-whatsapp
+          href: https://web.whatsapp.com
+
+- Entertainment:
+    - YouTube:
+        - icon: si-youtube
+          href: https://youtube.com
+    - Netflix:
+        - icon: si-netflix
+          href: https://netflix.com
+    - Spotify:
+        - icon: si-spotify
+          href: https://spotify.com
+    - Prime Video:
+        - icon: si-primevideo
+          href: https://primevideo.com
