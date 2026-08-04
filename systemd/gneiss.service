@@ -1,7 +1,18 @@
-sudo cp systemd/gneiss.service /etc/systemd/system/
+[Unit]
+Description=Gneiss Homelab
+Requires=docker.service
+After=docker.service network-online.target
 
-sudo systemctl daemon-reload
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+User=phanindra
+WorkingDirectory=/home/phanindra/Projects/gneiss
 
-sudo systemctl enable gneiss
+ExecStart=/usr/bin/make -C /home/phanindra/Projects/gneiss up
+ExecStop=/usr/bin/make -C /home/phanindra/Projects/gneiss stop
 
-sudo systemctl start gneiss
+TimeoutStartSec=300
+
+[Install]
+WantedBy=multi-user.target

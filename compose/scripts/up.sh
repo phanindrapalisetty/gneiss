@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 set -Eeuo pipefail
-
-ROOT="${ROOT:-$HOME/Projects/gneiss/compose}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/common.sh"
 
 GROUP="${1:-all}"
 

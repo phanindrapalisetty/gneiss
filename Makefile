@@ -6,7 +6,7 @@ up:
 down:
 	./compose/scripts/down.sh
 
-down:
+stop:
 	./compose/scripts/stop.sh
 
 infra:

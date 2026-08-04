@@ -2,7 +2,8 @@
 
 set -Eeuo pipefail
 
-ROOT="${ROOT:-$HOME/Projects/gneiss/compose}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/common.sh"
 
 GROUP="${1:-all}"
 
@@ -28,7 +29,7 @@ stop_group() {
 
         echo "→ Stopping $service"
 
-        docker compose -f "$compose" down
+        docker compose -f "$compose" stop
 
     done
 }
@@ -57,11 +58,11 @@ case "$GROUP" in
         echo "Unknown group: $GROUP"
         echo ""
         echo "Usage:"
-        echo "  ./down.sh infrastructure"
-        echo "  ./down.sh monitoring"
-        echo "  ./down.sh data-platform"
-        echo "  ./down.sh applications"
-        echo "  ./down.sh all"
+        echo "  ./stop.sh infrastructure"
+        echo "  ./stop.sh monitoring"
+        echo "  ./stop.sh data-platform"
+        echo "  ./stop.sh applications"
+        echo "  ./stop.sh all"
         exit 1
         ;;
 esac
