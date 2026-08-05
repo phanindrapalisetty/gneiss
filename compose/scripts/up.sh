@@ -8,11 +8,25 @@ GROUP="${1:-all}"
 
 start_group() {
     local group="$1"
-    local dir="$ROOT/$group"
+    local dir 
+    case "$group" in
+        infrastructure)
+            dir="$INFRA_DIR"
+            ;;
+        monitoring)
+            dir="$MONITORING_DIR"
+            ;;
+        data-platform)
+            dir="$DATA_DIR"
+            ;;
+        applications)
+            dir="$APPLICATIONS_DIR"
+            ;;
+    esac
 
     if [[ ! -d "$dir" ]]; then
-        echo "❌ Group '$group' does not exist."
-        exit 1
+        echo "[INFO] Skipping '$group' (directory does not exist)"
+        return
     fi
 
     echo ""

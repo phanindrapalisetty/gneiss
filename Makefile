@@ -1,4 +1,4 @@
-.PHONY: up down infra monitoring data apps homepage caddy portainer
+.PHONY: up down stop infra monitoring data apps homepage caddy portainer
 
 up: 
 	./compose/scripts/up.sh
@@ -9,6 +9,10 @@ down:
 stop:
 	./compose/scripts/stop.sh
 
+restart:
+	./compose/scripts/stop.sh
+	./compose/scripts/up.sh
+
 infra:
 	./compose/scripts/up.sh infrastructure
 
@@ -16,7 +20,7 @@ monitoring:
 	./compose/scripts/up.sh monitoring
 
 data:
-	./compose/scripts/up.sh data
+	./compose/scripts/up.sh data-platform
 
 apps:
 	./compose/scripts/up.sh applications
