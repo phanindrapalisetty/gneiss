@@ -20,10 +20,10 @@ As the homelab grows, remembering ports and URLs becomes difficult.
 
 Instead of remembering:
 
-- http://192.168.1.9:3000
-- http://192.168.1.9:8080
-- http://192.168.1.9:9000
-- http://192.168.1.9:8096
+- http://192.168.1.7:3000
+- http://192.168.1.7:8080
+- http://192.168.1.7:9000
+- http://192.168.1.7:8096
 
 Homepage provides one landing page from which every service can be accessed.
 
@@ -201,7 +201,7 @@ Docker administration will instead be handled by Portainer.
 ## Access
 
 ```
-http://192.168.1.9:3000
+http://192.168.1.7:3000
 ```
 
 Future state:
@@ -316,7 +316,7 @@ docker ps
 Verify Homepage is reachable:
 
 ```
-http://192.168.1.9:3000
+http://192.168.1.7:3000
 ```
 
 Verify configuration reloads after editing YAML files.

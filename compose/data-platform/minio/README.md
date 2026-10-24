@@ -143,8 +143,8 @@ http://minio-console.gneiss {
 Add entries to the hosts file:
 
 ```text
-192.168.1.9    minio-api.gneiss
-192.168.1.9    minio-console.gneiss
+192.168.1.7    minio-api.gneiss
+192.168.1.7    minio-console.gneiss
 ```
 
 This allows both services to be accessed using friendly hostnames.

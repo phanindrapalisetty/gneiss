@@ -1,14 +1,23 @@
+# Header bar. Each widget polls the server, so keep the list short.
+- greeting:
+    text_size: xl
+    text: Gneiss
+
 - resources:
     cpu: true
     memory: true
     disk: /
+    uptime: true
+    refresh: 10000        # ms; 10s is plenty and cheaper than the default
 
 - search:
-    provider: google
+    provider: duckduckgo
     target: _blank
+    focus: true
 
 - datetime:
     text_size: sm
     format:
-      dateStyle: full
+      dateStyle: medium
       timeStyle: short
+      hour12: false

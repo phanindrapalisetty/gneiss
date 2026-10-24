@@ -131,7 +131,7 @@ The local `.env` file is created from this template and is intentionally exclude
 Open:
 
 ```
-https://192.168.1.9:9443
+https://192.168.1.7:9443
 ```
 
 During first launch:
@@ -206,13 +206,13 @@ Example:
 ```yaml
 - Portainer:
     icon: portainer.png
-    href: https://192.168.1.9:9443
+    href: https://192.168.1.7:9443
     description: Docker Management
 
     server: my-docker
     container: portainer
 
-    siteMonitor: https://192.168.1.9:9443
+    siteMonitor: https://192.168.1.7:9443
 ```
 
 `siteMonitor` provides response time monitoring.
@@ -256,7 +256,7 @@ This separation simplifies backup and disaster recovery.
 ## Access
 
 ```
-https://192.168.1.9:9443
+https://192.168.1.7:9443
 ```
 
 Future state:
@@ -282,13 +282,13 @@ Portainer listens on HTTPS.
 Use:
 
 ```
-https://192.168.1.9:9443
+https://192.168.1.7:9443
 ```
 
 instead of:
 
 ```
-http://192.168.1.9:9443
+http://192.168.1.7:9443
 ```
 
 ---
@@ -334,7 +334,7 @@ Confirm:
 Verify web access:
 
 ```
-https://192.168.1.9:9443
+https://192.168.1.7:9443
 ```
 
 ---

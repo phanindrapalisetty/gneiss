@@ -62,7 +62,7 @@ b4:6b:fc:79:73:7c
 Reserved IP
 
 ```
-192.168.1.9
+192.168.1.7
 ```
 
 Gateway
@@ -93,7 +93,7 @@ Home Router
     │      ▼
     │   Gneiss
     │   MAC: b4:6b:fc:79:73:7c
-    │   IP : 192.168.1.9
+    │   IP : 192.168.1.7
     │
     ├── MacBook
     ├── Android TV
@@ -133,7 +133,7 @@ Configure the router:
 |----------|-------|
 | Hostname | Gneiss |
 | MAC Address | b4:6b:fc:79:73:7c |
-| Reserved IP | 192.168.1.9 |
+| Reserved IP | 192.168.1.7 |
 
 ---
 
@@ -280,7 +280,7 @@ Verified:
 - ✅ Docker interface (`docker0`) excluded
 - ✅ `avahi-publish` successfully registers services
 - ✅ `avahi-browse` locally discovers published services
-- ✅ Packet capture confirms mDNS advertisements are transmitted from `192.168.1.9`
+- ✅ Packet capture confirms mDNS advertisements are transmitted from `192.168.1.7`
 - ✅ macOS receives mDNS advertisements from other devices (Android TV)
 
 ### Current Conclusion
@@ -294,7 +294,7 @@ None.
 SSH, VS Code Remote, Docker, CasaOS, and all planned services function normally using:
 
 - SSH alias (`ssh gneiss`)
-- Static IP (`192.168.1.9`)
+- Static IP (`192.168.1.7`)
 
 ### Future Plan
 

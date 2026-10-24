@@ -136,9 +136,9 @@ Mac/Linux:
 Example:
 
 ```
-192.168.1.9    home.gneiss
-192.168.1.9    casa.gneiss
-192.168.1.9    portainer.gneiss
+192.168.1.7    home.gneiss
+192.168.1.7    casa.gneiss
+192.168.1.7    portainer.gneiss
 ```
 
 Windows:
@@ -156,7 +156,7 @@ Homepage validates incoming hostnames.
 When using Caddy, Homepage must allow the custom hostname.
 
 ```
-HOMEPAGE_ALLOWED_HOSTS=home.gneiss,192.168.1.9,localhost
+HOMEPAGE_ALLOWED_HOSTS=home.gneiss,192.168.1.7,localhost
 ```
 
 ---
@@ -226,7 +226,7 @@ Homepage rejects unknown Host headers.
 Solution:
 
 ```
-HOMEPAGE_ALLOWED_HOSTS=home.gneiss,192.168.1.9,localhost
+HOMEPAGE_ALLOWED_HOSTS=home.gneiss,192.168.1.7,localhost
 ```
 
 ---

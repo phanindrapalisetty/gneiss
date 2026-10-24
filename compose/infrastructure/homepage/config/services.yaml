@@ -2,29 +2,29 @@
 
     - CasaOS:
         icon: casaos.png
-        href: http://192.168.1.9
+        href: http://192.168.1.7
         description: Home Server
-        ping: 192.168.1.9
+        ping: 192.168.1.7
 
     - Homepage:
         icon: homepage.png
-        href: http://192.168.1.9:3000
+        href: http://192.168.1.7:3000
         description: Infrastructure Dashboard
         server: my-docker
         container: homepage
-        siteMonitor: http://192.168.1.9:3000
+        siteMonitor: http://192.168.1.7:3000
 
     - Portainer:
         icon: portainer.png
-        href: https://192.168.1.9:9443
+        href: https://192.168.1.7:9443
         description: Docker Management
         server: my-docker
         container: portainer
-        siteMonitor: https://192.168.1.9:9443
+        siteMonitor: https://192.168.1.7:9443
     
     - Caddy:
         icon: caddy.png
-        href: https://192.168.1.9:8000
+        href: https://192.168.1.7:8000
         description: Automatic HTTPS reverse proxy
         server: my-docker
         container: caddy
@@ -33,7 +33,7 @@
 
     - Airflow:
         icon: si-apacheairflow
-        href: https://192.168.1.9:8000
+        href: https://192.168.1.7:8000
         description: Workflow Orchestration
 
     - MinIO:

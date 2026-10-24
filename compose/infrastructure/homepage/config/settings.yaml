@@ -1,41 +1,39 @@
 title: Gneiss
-
+description: Homelab dashboard
 language: en
 
 theme: dark
-
 color: slate
-background:
-  color: "#1E2635"
-cardBlur: md
-
 headerStyle: clean
+useEqualHeights: true
+hideVersion: true
+statusStyle: dot          # small coloured dot instead of a big status badge
 
-providers:
-  openweathermap: ""
-  weatherapi: ""
+# Small, compressed image served by Homepage itself (see README).
+# blur/saturate/brightness are applied by the browser, not the server.
+background:
+  image: /images/background.webp
+  blur: sm
+  saturate: 60
+  brightness: 50
+  opacity: 60
+cardBlur: sm              # keep low: heavy blur is the main cost on weak devices
 
+# Top row: Infrastructure across the full width.
+# Then Media / Data Platform / Monitoring side by side as three columns.
 layout:
+  Infrastructure:
+    style: row
+    columns: 3
+    icon: mdi-server-network
+  Media:
+    icon: mdi-play-box-multiple
+  Data Platform:
+    icon: mdi-database-cog
+  Monitoring:
+    icon: mdi-chart-line
+    initiallyCollapsed: false
   Quick Links:
     style: row
     columns: 6
-
-  Infrastructure:
-    style: row
-    columns: 2
-
-  Development:
-    style: row
-    columns: 3
-
-  Media:
-    style: row
-    columns: 4
-
-  Data Platform:
-    style: row
-    columns: 5
-
-  Monitoring:
-    style: row
-    columns: 3
+    header: false

@@ -68,7 +68,7 @@ Configuration:
 
 ```text
 Host gneiss
-    HostName 192.168.1.9
+    HostName 192.168.1.7
     User phanindra
     IdentityFile ~/.ssh/id_ed25519
     AddKeysToAgent yes
@@ -218,7 +218,7 @@ ssh-keygen -R gneiss
 or
 
 ```bash
-ssh-keygen -R 192.168.1.9
+ssh-keygen -R 192.168.1.7
 ```
 
 Reconnect.

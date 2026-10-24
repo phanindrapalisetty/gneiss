@@ -105,7 +105,7 @@ hostname -I
 Example:
 
 ```text
-192.168.1.9
+192.168.1.7
 ```
 
 ---
@@ -115,7 +115,7 @@ Example:
 Visit:
 
 ```text
-http://192.168.1.9
+http://192.168.1.7
 ```
 
 Complete the initial web setup.
