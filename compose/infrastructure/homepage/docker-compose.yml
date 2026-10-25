@@ -13,7 +13,6 @@ services:
       PUID: 1000
       PGID: 1000
       HOMEPAGE_ALLOWED_HOSTS: ${HOMEPAGE_ALLOWED_HOSTS}
-      HOMEPAGE_VAR_HOST: ${HOMEPAGE_VAR_HOST}
     
     group_add:
       - "989"

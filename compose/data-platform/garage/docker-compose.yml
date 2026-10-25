@@ -1,0 +1,27 @@
+# # compose/data-platform/garage/docker-compose.yml
+# services:
+#   garage:
+#     image: dxflrs/garage:v2.4.1
+#     container_name: garage
+#     restart: unless-stopped
+#     ports:
+#       - "3900:3900"            # S3 API (replaces MinIO :9000)
+#       - "127.0.0.1:3903:3903"  # admin API, local only
+#     volumes:
+#       - ./garage.toml:/etc/garage.toml:ro
+#       - ./meta:/var/lib/garage/meta   # metadata (keep on SSD)
+#       - ./data:/var/lib/garage/data   # object data (can point at a big disk)
+
+#   garage-webui:
+#     image: khairul169/garage-webui:1.1.0
+#     container_name: garage-webui
+#     restart: unless-stopped
+#     ports:
+#       - "3909:3909"            # web UI
+#     volumes:
+#       - ./garage.toml:/etc/garage.toml:ro   # reads admin_token from here
+#     environment:
+#       API_BASE_URL: "http://garage:3903"
+#       S3_ENDPOINT_URL: "http://garage:3900"
+#     depends_on:
+#       - garage
