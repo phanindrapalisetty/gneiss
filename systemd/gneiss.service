@@ -2,6 +2,7 @@
 Description=Gneiss Homelab
 Requires=docker.service
 After=docker.service network-online.target
+RequiresMountsFor=/mnt/storage
 
 [Service]
 Type=oneshot
